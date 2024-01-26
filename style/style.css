@@ -1,0 +1,357 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  border: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body .header {
+  background-image: url(../image/mountains.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+body .header .header-top {
+  padding-top: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .header .header-left {
+  display: flex;
+  align-items: center;
+}
+body .header .header-left .toplist {
+  display: flex;
+}
+body .header .header-left .toplist li {
+  padding-right: 30px;
+  color: #FCFCFC;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .header .header-left .toplist li > :nth-child(4) {
+  padding-right: 0;
+}
+body .header .header-left .mountain {
+  margin-right: 99px;
+  color: #FCFCFC;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+body .header .header-right {
+  display: flex;
+  align-items: center;
+}
+body .header .header-right .tel {
+  margin-right: 43px;
+  color: #FCFCFC;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+body .header .header-right .search {
+  margin-right: 30px;
+}
+body .header .header-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 299px;
+}
+body .header .header-center h1 {
+  padding-top: 263px;
+  padding-bottom: 66px;
+  color: #FCFCFC;
+  font-family: "Oswald", sans-serif;
+  font-size: 98px;
+  font-weight: 600;
+}
+body .header .header-center button {
+  cursor: pointer;
+  background: transparent;
+  color: #FCFCFC;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #FCFCFC;
+  padding: 16px 43px;
+}
+body .section1 {
+  position: relative;
+}
+body .section1 h2 {
+  padding-top: 140px;
+  padding-bottom: 50px;
+  display: flex;
+  width: 472px;
+  height: 107px;
+  flex-direction: column;
+  justify-content: center;
+  color: #061B28;
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 115%;
+}
+body .section1 .text {
+  padding-bottom: 140px;
+}
+body .section1 .text p {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 350px;
+}
+body .section1 .text > :first-child {
+  padding-bottom: 20px;
+}
+body .section1 .map {
+  position: absolute;
+  top: 223px;
+  right: 0;
+}
+body .section2 .nameSec {
+  margin-bottom: 80px;
+}
+body .section2 .nameSec h2 {
+  justify-content: center;
+  color: #061B28;
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 115%;
+  display: flex;
+}
+body .section2 .tours {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+body .section2 .tours .beluha {
+  position: relative;
+}
+body .section2 .tours .beluha .top {
+  display: flex;
+  justify-content: space-between;
+}
+body .section2 .tours .beluha .top .beluha_bg {
+  position: relative;
+}
+body .section2 .tours .beluha .top__left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 39px;
+}
+body .section2 .tours .beluha .top__left .point {
+  margin-right: 7px;
+}
+body .section2 .tours .beluha .top__right {
+  position: absolute;
+  right: 40px;
+  top: 41px;
+}
+body .section2 .tours .beluha .top__right button {
+  background: transparent;
+  cursor: pointer;
+}
+body .section2 .tours .beluha .bottom h2 {
+  position: absolute;
+  bottom: 113px;
+  left: 40px;
+}
+body .section2 .tours .beluha .bottom .info {
+  position: absolute;
+  bottom: 75px;
+  left: 40px;
+  display: flex;
+  color: var(--, #061B28);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+body .section2 .tours .beluha .bottom .info img {
+  margin-left: 3px;
+}
+body .section2 .tours .beluha .bottom .complexity {
+  display: flex;
+  position: absolute;
+  left: 38px;
+  bottom: 40px;
+}
+body .section2 .tours .beluha .bottom .complexity img {
+  margin-right: 6px;
+}
+body .section2 .tours .beluha .bottom .complexity P {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+body .section2 .tours .elbrus {
+  position: relative;
+}
+body .section2 .tours .elbrus .top {
+  display: flex;
+  justify-content: space-between;
+}
+body .section2 .tours .elbrus .top .beluha_bg {
+  position: relative;
+}
+body .section2 .tours .elbrus .top__left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 39px;
+}
+body .section2 .tours .elbrus .top__left .point {
+  margin-right: 7px;
+}
+body .section2 .tours .elbrus .top__right {
+  position: absolute;
+  right: 40px;
+  top: 41px;
+}
+body .section2 .tours .elbrus .top__right button {
+  background: transparent;
+  cursor: pointer;
+}
+body .section2 .tours .elbrus .bottom h2 {
+  position: absolute;
+  bottom: 113px;
+  left: 40px;
+}
+body .section2 .tours .elbrus .bottom .info {
+  position: absolute;
+  bottom: 75px;
+  left: 40px;
+  display: flex;
+  color: var(--, #061B28);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+body .section2 .tours .elbrus .bottom .info img {
+  margin-left: 3px;
+}
+body .section2 .tours .elbrus .bottom .complexity {
+  display: flex;
+  position: absolute;
+  left: 38px;
+  bottom: 40px;
+}
+body .section2 .tours .elbrus .bottom .complexity img {
+  margin-right: 6px;
+}
+body .section2 .tours .elbrus .bottom .complexity P {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+body .section2 .tours .kilimangaro {
+  position: relative;
+}
+body .section2 .tours .kilimangaro .top {
+  display: flex;
+  justify-content: space-between;
+}
+body .section2 .tours .kilimangaro .top .kilimangaro_bg {
+  position: relative;
+}
+body .section2 .tours .kilimangaro .top__left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 39px;
+}
+body .section2 .tours .kilimangaro .top__left .point {
+  margin-right: 7px;
+}
+body .section2 .tours .kilimangaro .top__right {
+  position: absolute;
+  right: 40px;
+  top: 41px;
+}
+body .section2 .tours .kilimangaro .top__right button {
+  background: transparent;
+  cursor: pointer;
+}
+body .section2 .tours .kilimangaro .bottom h2 {
+  position: absolute;
+  bottom: 113px;
+  left: 40px;
+}
+body .section2 .tours .kilimangaro .bottom .info {
+  position: absolute;
+  bottom: 75px;
+  left: 40px;
+  display: flex;
+  color: var(--, #061B28);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+body .section2 .tours .kilimangaro .bottom .info img {
+  margin-left: 3px;
+}
+body .section2 .tours .kilimangaro .bottom .complexity {
+  display: flex;
+  position: absolute;
+  left: 38px;
+  bottom: 40px;
+}
+body .section2 .tours .kilimangaro .bottom .complexity img {
+  margin-right: 6px;
+}
+body .section2 .tours .kilimangaro .bottom .complexity P {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+body .section2 .buttons {
+  display: flex;
+  justify-content: right;
+}
+body .section2 .buttons .left_button {
+  margin-right: 25px;
+}
+body .section2 .buttons button {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
