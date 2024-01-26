@@ -354,4 +354,101 @@ body .section2 .buttons .left_button {
 }
 body .section2 .buttons button {
   cursor: pointer;
+}
+body .section3 {
+  margin-top: 130px;
+}
+body .section3 .title {
+  display: flex;
+  justify-content: center;
+  color: #061B28;
+  font-family: "Oswald", sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 115%;
+  margin-bottom: 80px;
+}
+body .section3 .tabs {
+  display: flex;
+  justify-content: space-between;
+}
+body .section3 .tabs__container .tab__title {
+  position: relative;
+  width: 400px;
+  height: 128px;
+  margin-right: 70px;
+}
+body .section3 .tabs__container .tab__title p {
+  margin: 0 0 20px 30px;
+  padding-top: 30px;
+  color: #7E8386;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+body .section3 .tabs__container .tab__title h2 {
+  margin-left: 30px;
+  color: #FCFCFC;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+body .section3 .tabs__container .tab__title img {
+  position: absolute;
+  bottom: 0;
+}
+body .section3 .tabs__container .tab .active-tab {
+  background: #061B28;
+}
+body .section3 .tabs__container .tab .active-tab h2 {
+  margin-left: 30px;
+  color: #FCFCFC;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+body .section3 .tabs__container .tab .non_active-tab h2 {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+body .section3 .tabs__content {
+  margin-bottom: 86px;
+}
+body .section3 .tabs__content img {
+  margin-bottom: 40px;
+}
+body .section3 .tabs__content .tab__date {
+  margin-bottom: 20px;
+  color: #626F77;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+body .section3 .tabs__content .tab__name {
+  margin-bottom: 35px;
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 140%;
+}
+body .section3 .tabs__content .p_first {
+  margin-bottom: 10px;
+}
+body .section3 .tabs__content p {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+body .section3 .tabs__content .hidden-tab-content {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
