@@ -461,6 +461,7 @@ body{
     .section3{
 
         margin-top: 130px;
+        margin-bottom: 86px;
 
         .title{          
             display: flex;
@@ -483,6 +484,7 @@ body{
                 .tab{
 
                     &__title{
+                        cursor: pointer;
                         position: relative;
                         width: 400px;
                         height: 128px;
@@ -584,6 +586,7 @@ body{
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 150%;
+                    width: 683px;
                 }
 
                 .hidden-tab-content{
@@ -594,5 +597,178 @@ body{
             }
 
         }
+    }
+
+    .section4{
+        
+        background-color: #061B28;
+        background-size: contain;
+
+        .sec4{
+            
+
+            display: flex;
+            justify-content: space-between;
+
+            &__right{
+
+                background: url(/image/RegBg.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 673px;
+                height: 725px;
+                max-width: 690px;
+                position: absolute;
+                right: 0;
+
+            }
+
+            &__left{
+
+                .title{
+
+                    margin-top: 80px;
+                    margin-bottom: 40px;
+                    width: 525px;
+                    height: 107px;
+                    color: #FCFCFC;
+                    font-family: $Oswald;
+                    font-size: 52px;
+                    font-weight: 600;
+                    line-height: 115%;
+
+                }
+
+                .unTitle{
+
+                    width: 431px;
+                    height: 40px;
+                    color: #FCFCFC;
+                    font-family: $Roboto;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    margin-bottom: 45px;
+
+                }
+
+                .reg{
+
+                    display: flex;
+                    flex-direction: column;
+
+                    input{
+
+                        background: transparent;
+                        border: 0;
+                        height: 40px;
+                        outline: none;
+                        color: #7E8386;
+                        font-family: $Roboto;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+
+                    }
+
+                    img{
+
+                        width: 525px;
+                        height: 1px;
+                        margin-bottom: 35px;
+
+                    }
+
+                    button{
+
+                        width: 525px;
+                        height: 50px;
+                        background: #EC5118;
+                        
+                        h2{
+
+                            cursor: pointer;
+                            color: #FCFCFC;
+                            font-family: $Roboto;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 140%;
+
+                        }
+
+                    }
+
+                    p{
+
+                        margin-top: 25px;
+                        margin-bottom: 80px;
+                        width: 393px;
+                        height: 30px;
+                        color:  #FCFCFC;
+                        font-family: $Roboto;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 140%;
+
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer{
+
+        background-color: #061B28;
+        background-size: contain;
+
+        .foot{
+
+            padding: 56px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__left{
+
+                display: flex;
+                align-items: center;
+
+                p{
+
+                    color: #FCFCFC;
+                    font-family: $Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 150%;
+
+                }
+
+                img{
+                    margin: 0 5px;
+                }
+            }
+
+            a{
+
+                color: #FCFCFC;
+                font-family: $Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 150%;
+
+            }
+
+            h2{
+
+                color: #FCFCFC;
+                font-family: $Oswald;
+                font-size: 24px;
+                font-weight: 600;
+
+            }
+        }
+
     }
 }
