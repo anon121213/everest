@@ -52,11 +52,13 @@ body .header .header-left .toplist li {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  cursor: pointer;
 }
 body .header .header-left .toplist li > :nth-child(4) {
   padding-right: 0;
 }
 body .header .header-left .mountain {
+  cursor: pointer;
   margin-right: 99px;
   color: #FCFCFC;
   font-family: "Oswald", sans-serif;
@@ -66,6 +68,10 @@ body .header .header-left .mountain {
 body .header .header-right {
   display: flex;
   align-items: center;
+}
+body .header .header-right button {
+  background: transparent;
+  cursor: pointer;
 }
 body .header .header-right .tel {
   margin-right: 43px;
@@ -464,7 +470,7 @@ body .section4 .sec4 {
   justify-content: space-between;
 }
 body .section4 .sec4__right {
-  background: url(/image/RegBg.png);
+  background: url(../image/RegBg.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 673px;
