@@ -27,12 +27,12 @@ tabsTitle.forEach(item => item.addEventListener('click', event => {
        
 }))
 
-sliderButtonRight.addEventListener('click', function(){
+sliderButtonRight.addEventListener('click', e =>{
 
     sliderOffset -= 401;
     console.log(childs.length)
 
-    if(sliderOffset < -401){
+    if(sliderOffset < -802){
 
         sliderOffset = 0;
 
@@ -42,13 +42,13 @@ sliderButtonRight.addEventListener('click', function(){
 
 })
 
-sliderButtonLeft.addEventListener('click', function(){
+sliderButtonLeft.addEventListener('click', e =>{
 
     sliderOffset += 401;
 
     if(sliderOffset > 0){
 
-        sliderOffset = -401;
+        sliderOffset = -802;
         
     }
 
