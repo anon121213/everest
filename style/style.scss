@@ -174,15 +174,25 @@ body{
 
         }     
         
+        .slider-hidden{
+            overflow: hidden;           
+        }
+
         .tours{
 
             margin-bottom: 40px;
             display: flex;
             justify-content: space-between;
+            position: relative;
+            left: 0;
+            transition: all ease .5s;   
+            
+                
 
             .beluha{
 
                 position: relative;
+                margin-right: 31px;
 
                 .top{
 
@@ -275,6 +285,7 @@ body{
             .elbrus{
 
                 position: relative;
+                margin-right: 31px;
 
                 .top{
 
@@ -365,6 +376,7 @@ body{
             .kilimangaro{
 
                 position: relative;
+                margin-right: 31px;
 
                 .top{
 
@@ -627,12 +639,13 @@ body{
                 width: 673px;
                 height: 725px;
                 max-width: 690px;
-                position: absolute;
-                right: 0;
+                margin-right: -100px;
 
             }
 
             &__left{
+
+                padding-right: 60px;
 
                 .title{
 

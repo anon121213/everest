@@ -154,13 +154,20 @@ body .section2 .nameSec h2 {
   line-height: 115%;
   display: flex;
 }
+body .section2 .slider-hidden {
+  overflow: hidden;
+}
 body .section2 .tours {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  left: 0;
+  transition: all ease 0.5s;
 }
 body .section2 .tours .beluha {
   position: relative;
+  margin-right: 31px;
 }
 body .section2 .tours .beluha .top {
   display: flex;
@@ -225,6 +232,7 @@ body .section2 .tours .beluha .bottom .complexity P {
 }
 body .section2 .tours .elbrus {
   position: relative;
+  margin-right: 31px;
 }
 body .section2 .tours .elbrus .top {
   display: flex;
@@ -289,6 +297,7 @@ body .section2 .tours .elbrus .bottom .complexity P {
 }
 body .section2 .tours .kilimangaro {
   position: relative;
+  margin-right: 31px;
 }
 body .section2 .tours .kilimangaro .top {
   display: flex;
@@ -476,8 +485,10 @@ body .section4 .sec4__right {
   width: 673px;
   height: 725px;
   max-width: 690px;
-  position: absolute;
-  right: 0;
+  margin-right: -100px;
+}
+body .section4 .sec4__left {
+  padding-right: 60px;
 }
 body .section4 .sec4__left .title {
   margin-top: 80px;
