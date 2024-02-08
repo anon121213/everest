@@ -1008,6 +1008,30 @@ $Roboto: 'Roboto', sans-serif;
     
 }
 
+@media (max-width: 1180px){
+
+    .container{
+        max-width: 900px;
+    }
+
+}
+
+@media (max-width: 930px){
+
+    .container{
+        max-width: 840px;
+    }
+
+}
+
+@media (max-width: 840px){
+
+    .container{
+        max-width: 700px;
+    }
+
+}
+
 @media (max-width: 1369px){
 
     .sec4__left{
@@ -1100,7 +1124,9 @@ $Roboto: 'Roboto', sans-serif;
 
 @media (max-width: 480px){
 
-
+    .container{
+        max-width: 340px;
+    }
 
     .section1 h2{
 
@@ -1118,7 +1144,7 @@ $Roboto: 'Roboto', sans-serif;
     .section1 h2{
 
         padding-top: 50px;
-        width: 380px;
+        width: 350px;
         font-size: 40px;
 
     }
