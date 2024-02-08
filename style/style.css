@@ -22,73 +22,77 @@ button {
   border: 0;
 }
 
+:root {
+  --burger: false;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
 }
 
-body .header {
+header {
   background-image: url(../image/mountains.png);
   background-size: cover;
   background-repeat: no-repeat;
   align-items: center;
 }
-body .header .header-top {
+header .header-top {
   padding-top: 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .header .header-left {
+header .header-left {
   display: flex;
   align-items: center;
 }
-body .header .header-left .toplist {
+header .header-left .toplist {
   display: flex;
 }
-body .header .header-left .toplist li {
-  padding-right: 30px;
+header .header-left .toplist li {
+  padding-right: 3vw;
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   cursor: pointer;
 }
-body .header .header-left .toplist li > :nth-child(4) {
+header .header-left .toplist li > :nth-child(4) {
   padding-right: 0;
 }
-body .header .header-left .mountain {
+header .header-left .mountain {
   cursor: pointer;
-  margin-right: 99px;
+  margin-right: 5vw;
   color: #FCFCFC;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
-body .header .header-right {
+header .header-right {
   display: flex;
   align-items: center;
 }
-body .header .header-right button {
+header .header-right button {
   background: transparent;
   cursor: pointer;
 }
-body .header .header-right .tel {
-  margin-right: 43px;
+header .header-right .tel {
+  margin-right: 5vw;
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-body .header .header-right .search {
-  margin-right: 30px;
+header .header-right .search {
+  margin-right: 3vw;
 }
-body .header .header-center {
+header .header-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 299px;
 }
-body .header .header-center h1 {
+header .header-center h1 {
   padding-top: 263px;
   padding-bottom: 66px;
   color: #FCFCFC;
@@ -96,7 +100,7 @@ body .header .header-center h1 {
   font-size: 98px;
   font-weight: 600;
 }
-body .header .header-center button {
+header .header-center button {
   cursor: pointer;
   background: transparent;
   color: #FCFCFC;
@@ -106,10 +110,11 @@ body .header .header-center button {
   border: 2px solid #FCFCFC;
   padding: 16px 43px;
 }
-body .section1 {
+
+.section1 {
   position: relative;
 }
-body .section1 h2 {
+.section1 h2 {
   padding-top: 140px;
   padding-bottom: 50px;
   display: flex;
@@ -123,10 +128,10 @@ body .section1 h2 {
   font-weight: 600;
   line-height: 115%;
 }
-body .section1 .text {
+.section1 .text {
   padding-bottom: 140px;
 }
-body .section1 .text p {
+.section1 .text p {
   color: #061B28;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -134,18 +139,19 @@ body .section1 .text p {
   line-height: 150%;
   max-width: 350px;
 }
-body .section1 .text > :first-child {
+.section1 .text > :first-child {
   padding-bottom: 20px;
 }
-body .section1 .map {
+.section1 .map {
   position: absolute;
-  top: 223px;
+  top: 320px;
   right: 0;
 }
-body .section2 .nameSec {
+
+.section2 .nameSec {
   margin-bottom: 80px;
 }
-body .section2 .nameSec h2 {
+.section2 .nameSec h2 {
   justify-content: center;
   color: #061B28;
   font-family: "Oswald", sans-serif;
@@ -154,10 +160,10 @@ body .section2 .nameSec h2 {
   line-height: 115%;
   display: flex;
 }
-body .section2 .slider-hidden {
+.section2 .slider-hidden {
   overflow: hidden;
 }
-body .section2 .tours {
+.section2 .tours {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
@@ -165,42 +171,107 @@ body .section2 .tours {
   left: 0;
   transition: all ease 0.5s;
 }
-body .section2 .tours .beluha {
+.section2 .tours .beluha {
   position: relative;
   margin-right: 31px;
 }
-body .section2 .tours .beluha .top {
+.section2 .tours .beluha .top {
   display: flex;
   justify-content: space-between;
 }
-body .section2 .tours .beluha .top .beluha_bg {
+.section2 .tours .beluha .top .beluha_bg {
   position: relative;
 }
-body .section2 .tours .beluha .top__left {
+.section2 .tours .beluha .top__left {
   display: flex;
   align-items: center;
   position: absolute;
   left: 40px;
   top: 39px;
 }
-body .section2 .tours .beluha .top__left .point {
+.section2 .tours .beluha .top__left .point {
   margin-right: 7px;
 }
-body .section2 .tours .beluha .top__right {
+.section2 .tours .beluha .top__right {
   position: absolute;
   right: 40px;
   top: 41px;
 }
-body .section2 .tours .beluha .top__right button {
+.section2 .tours .beluha .top__right button {
   background: transparent;
   cursor: pointer;
 }
-body .section2 .tours .beluha .bottom h2 {
+.section2 .tours .beluha .bottom h2 {
   position: absolute;
   bottom: 113px;
   left: 40px;
 }
-body .section2 .tours .beluha .bottom .info {
+.section2 .tours .beluha .bottom .info {
+  position: absolute;
+  bottom: 75px;
+  left: 40px;
+  display: flex;
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+.section2 .tours .beluha .bottom .info img {
+  margin-left: 3px;
+}
+.section2 .tours .beluha .bottom .complexity {
+  display: flex;
+  position: absolute;
+  left: 38px;
+  bottom: 40px;
+}
+.section2 .tours .beluha .bottom .complexity img {
+  margin-right: 6px;
+}
+.section2 .tours .beluha .bottom .complexity P {
+  color: #061B28;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 115%;
+}
+.section2 .tours .elbrus {
+  position: relative;
+  margin-right: 31px;
+}
+.section2 .tours .elbrus .top {
+  display: flex;
+  justify-content: space-between;
+}
+.section2 .tours .elbrus .top .beluha_bg {
+  position: relative;
+}
+.section2 .tours .elbrus .top__left {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  top: 39px;
+}
+.section2 .tours .elbrus .top__left .point {
+  margin-right: 7px;
+}
+.section2 .tours .elbrus .top__right {
+  position: absolute;
+  right: 40px;
+  top: 41px;
+}
+.section2 .tours .elbrus .top__right button {
+  background: transparent;
+  cursor: pointer;
+}
+.section2 .tours .elbrus .bottom h2 {
+  position: absolute;
+  bottom: 113px;
+  left: 40px;
+}
+.section2 .tours .elbrus .bottom .info {
   position: absolute;
   bottom: 75px;
   left: 40px;
@@ -211,61 +282,61 @@ body .section2 .tours .beluha .bottom .info {
   font-weight: 400;
   line-height: 115%;
 }
-body .section2 .tours .beluha .bottom .info img {
+.section2 .tours .elbrus .bottom .info img {
   margin-left: 3px;
 }
-body .section2 .tours .beluha .bottom .complexity {
+.section2 .tours .elbrus .bottom .complexity {
   display: flex;
   position: absolute;
   left: 38px;
   bottom: 40px;
 }
-body .section2 .tours .beluha .bottom .complexity img {
+.section2 .tours .elbrus .bottom .complexity img {
   margin-right: 6px;
 }
-body .section2 .tours .beluha .bottom .complexity P {
+.section2 .tours .elbrus .bottom .complexity P {
   color: #061B28;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 115%;
 }
-body .section2 .tours .elbrus {
+.section2 .tours .kilimangaro {
   position: relative;
   margin-right: 31px;
 }
-body .section2 .tours .elbrus .top {
+.section2 .tours .kilimangaro .top {
   display: flex;
   justify-content: space-between;
 }
-body .section2 .tours .elbrus .top .beluha_bg {
+.section2 .tours .kilimangaro .top .kilimangaro_bg {
   position: relative;
 }
-body .section2 .tours .elbrus .top__left {
+.section2 .tours .kilimangaro .top__left {
   display: flex;
   align-items: center;
   position: absolute;
   left: 40px;
   top: 39px;
 }
-body .section2 .tours .elbrus .top__left .point {
+.section2 .tours .kilimangaro .top__left .point {
   margin-right: 7px;
 }
-body .section2 .tours .elbrus .top__right {
+.section2 .tours .kilimangaro .top__right {
   position: absolute;
   right: 40px;
   top: 41px;
 }
-body .section2 .tours .elbrus .top__right button {
+.section2 .tours .kilimangaro .top__right button {
   background: transparent;
   cursor: pointer;
 }
-body .section2 .tours .elbrus .bottom h2 {
+.section2 .tours .kilimangaro .bottom h2 {
   position: absolute;
   bottom: 113px;
   left: 40px;
 }
-body .section2 .tours .elbrus .bottom .info {
+.section2 .tours .kilimangaro .bottom .info {
   position: absolute;
   bottom: 75px;
   left: 40px;
@@ -276,105 +347,41 @@ body .section2 .tours .elbrus .bottom .info {
   font-weight: 400;
   line-height: 115%;
 }
-body .section2 .tours .elbrus .bottom .info img {
+.section2 .tours .kilimangaro .bottom .info img {
   margin-left: 3px;
 }
-body .section2 .tours .elbrus .bottom .complexity {
+.section2 .tours .kilimangaro .bottom .complexity {
   display: flex;
   position: absolute;
   left: 38px;
   bottom: 40px;
 }
-body .section2 .tours .elbrus .bottom .complexity img {
+.section2 .tours .kilimangaro .bottom .complexity img {
   margin-right: 6px;
 }
-body .section2 .tours .elbrus .bottom .complexity P {
+.section2 .tours .kilimangaro .bottom .complexity P {
   color: #061B28;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 115%;
 }
-body .section2 .tours .kilimangaro {
-  position: relative;
-  margin-right: 31px;
-}
-body .section2 .tours .kilimangaro .top {
-  display: flex;
-  justify-content: space-between;
-}
-body .section2 .tours .kilimangaro .top .kilimangaro_bg {
-  position: relative;
-}
-body .section2 .tours .kilimangaro .top__left {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 40px;
-  top: 39px;
-}
-body .section2 .tours .kilimangaro .top__left .point {
-  margin-right: 7px;
-}
-body .section2 .tours .kilimangaro .top__right {
-  position: absolute;
-  right: 40px;
-  top: 41px;
-}
-body .section2 .tours .kilimangaro .top__right button {
-  background: transparent;
-  cursor: pointer;
-}
-body .section2 .tours .kilimangaro .bottom h2 {
-  position: absolute;
-  bottom: 113px;
-  left: 40px;
-}
-body .section2 .tours .kilimangaro .bottom .info {
-  position: absolute;
-  bottom: 75px;
-  left: 40px;
-  display: flex;
-  color: var(--, #061B28);
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 115%;
-}
-body .section2 .tours .kilimangaro .bottom .info img {
-  margin-left: 3px;
-}
-body .section2 .tours .kilimangaro .bottom .complexity {
-  display: flex;
-  position: absolute;
-  left: 38px;
-  bottom: 40px;
-}
-body .section2 .tours .kilimangaro .bottom .complexity img {
-  margin-right: 6px;
-}
-body .section2 .tours .kilimangaro .bottom .complexity P {
-  color: #061B28;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 115%;
-}
-body .section2 .buttons {
+.section2 .buttons {
   display: flex;
   justify-content: right;
 }
-body .section2 .buttons .left_button {
+.section2 .buttons .left_button {
   margin-right: 25px;
 }
-body .section2 .buttons button {
+.section2 .buttons button {
   cursor: pointer;
 }
-body .section3 {
+
+.section3 {
   margin-top: 130px;
   margin-bottom: 86px;
 }
-body .section3 .title {
+.section3 .title {
   display: flex;
   justify-content: center;
   color: #061B28;
@@ -384,18 +391,18 @@ body .section3 .title {
   line-height: 115%;
   margin-bottom: 80px;
 }
-body .section3 .tabs {
+.section3 .tabs {
   display: flex;
   justify-content: space-between;
 }
-body .section3 .tabs__container .tab__title {
+.section3 .tabs__container .tab__title {
   cursor: pointer;
   position: relative;
   width: 400px;
   height: 128px;
   margin-right: 70px;
 }
-body .section3 .tabs__container .tab__title p {
+.section3 .tabs__container .tab__title p {
   margin: 0 0 20px 30px;
   padding-top: 30px;
   color: #7E8386;
@@ -404,7 +411,7 @@ body .section3 .tabs__container .tab__title p {
   font-weight: 400;
   line-height: 140%;
 }
-body .section3 .tabs__container .tab__title h2 {
+.section3 .tabs__container .tab__title h2 {
   margin-left: 30px;
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
@@ -412,35 +419,45 @@ body .section3 .tabs__container .tab__title h2 {
   font-weight: 400;
   line-height: 140%;
 }
-body .section3 .tabs__container .tab__title img {
+.section3 .tabs__container .tab__title img {
   position: absolute;
   bottom: 0;
 }
-body .section3 .tabs__container .tab .active-tab {
+.section3 .tabs__container .tab .active-tab {
   background: #061B28;
 }
-body .section3 .tabs__container .tab .active-tab h2 {
-  margin-left: 30px;
+.section3 .tabs__container .tab .active-tab h2 {
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
 }
-body .section3 .tabs__container .tab .non_active-tab h2 {
+.section3 .tabs__container .tab .non_active-tab h2 {
   color: #061B28;
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 140%;
 }
-body .section3 .tabs__content {
+.section3 .tabs .tabs__content {
   margin-bottom: 86px;
 }
-body .section3 .tabs__content img {
+.section3 .tabs .tabs__content img {
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 840px;
 }
-body .section3 .tabs__content .tab__date {
+.section3 .tabs .tabs__content .p_first {
+  width: 100%;
+  max-width: 800px;
+}
+.section3 .tabs .tabs__content .p_second {
+  width: 100%;
+  max-width: 800px;
+}
+.section3 .tabs .tabs__content .tab__date {
+  width: 100%;
+  max-width: 100px;
+}
+.section3 .tabs .tabs__content .tab__date {
   margin-bottom: 20px;
   color: #626F77;
   font-family: "Roboto", sans-serif;
@@ -448,7 +465,7 @@ body .section3 .tabs__content .tab__date {
   font-weight: 400;
   line-height: 140%;
 }
-body .section3 .tabs__content .tab__name {
+.section3 .tabs .tabs__content .tab__name {
   margin-bottom: 35px;
   color: #061B28;
   font-family: "Roboto", sans-serif;
@@ -456,10 +473,10 @@ body .section3 .tabs__content .tab__name {
   font-weight: 700;
   line-height: 140%;
 }
-body .section3 .tabs__content .p_first {
+.section3 .tabs .tabs__content .p_first {
   margin-bottom: 10px;
 }
-body .section3 .tabs__content p {
+.section3 .tabs .tabs__content p {
   color: #061B28;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -467,30 +484,29 @@ body .section3 .tabs__content p {
   line-height: 150%;
   width: 683px;
 }
-body .section3 .tabs__content .hidden-tab-content {
+.section3 .tabs .tabs__content .hidden-tab-content {
   display: none;
 }
-body .section4 {
+
+.section4 {
   background-color: #061B28;
   background-size: contain;
 }
-body .section4 .sec4 {
+.section4 .sec4 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-body .section4 .sec4__right {
+.section4 .sec4__right {
   background: url(../image/RegBg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  width: 673px;
+  width: 100%;
   height: 725px;
   max-width: 690px;
   margin-right: -100px;
 }
-body .section4 .sec4__left {
-  padding-right: 60px;
-}
-body .section4 .sec4__left .title {
+.section4 .sec4__left .title {
   margin-top: 80px;
   margin-bottom: 40px;
   width: 525px;
@@ -501,7 +517,7 @@ body .section4 .sec4__left .title {
   font-weight: 600;
   line-height: 115%;
 }
-body .section4 .sec4__left .unTitle {
+.section4 .sec4__left .unTitle {
   width: 431px;
   height: 40px;
   color: #FCFCFC;
@@ -511,11 +527,11 @@ body .section4 .sec4__left .unTitle {
   line-height: 150%;
   margin-bottom: 45px;
 }
-body .section4 .sec4__left .reg {
+.section4 .sec4__left .reg {
   display: flex;
   flex-direction: column;
 }
-body .section4 .sec4__left .reg input {
+.section4 .sec4__left .reg input {
   background: transparent;
   border: 0;
   height: 40px;
@@ -526,17 +542,17 @@ body .section4 .sec4__left .reg input {
   font-weight: 400;
   line-height: 150%;
 }
-body .section4 .sec4__left .reg img {
+.section4 .sec4__left .reg img {
   width: 525px;
   height: 1px;
   margin-bottom: 35px;
 }
-body .section4 .sec4__left .reg button {
+.section4 .sec4__left .reg button {
   width: 525px;
   height: 50px;
   background: #EC5118;
 }
-body .section4 .sec4__left .reg button h2 {
+.section4 .sec4__left .reg button h2 {
   cursor: pointer;
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
@@ -545,7 +561,7 @@ body .section4 .sec4__left .reg button h2 {
   font-weight: 500;
   line-height: 140%;
 }
-body .section4 .sec4__left .reg p {
+.section4 .sec4__left .reg p {
   margin-top: 25px;
   margin-bottom: 80px;
   width: 393px;
@@ -556,40 +572,231 @@ body .section4 .sec4__left .reg p {
   font-weight: 400;
   line-height: 140%;
 }
-body .footer {
+
+.footer {
   background-color: #061B28;
   background-size: contain;
 }
-body .footer .foot {
+.footer .foot {
   padding: 56px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-body .footer .foot__left {
+.footer .foot__left {
   display: flex;
   align-items: center;
 }
-body .footer .foot__left p {
+.footer .foot__left p {
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
 }
-body .footer .foot__left img {
+.footer .foot__left img {
   margin: 0 5px;
 }
-body .footer .foot a {
+.footer .foot a {
   color: #FCFCFC;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 150%;
 }
-body .footer .foot h2 {
+.footer .foot h2 {
   color: #FCFCFC;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 600;
+}
+
+@media (max-width: 840px) {
+  .container {
+    max-width: 750px;
+  }
+  header .ful-hd {
+    display: none;
+  }
+  header .burger {
+    width: 100%;
+    padding-top: 30px;
+  }
+  header .burger .burger-hide {
+    display: none;
+  }
+  header .burger .heder-top-burger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header .burger .heder-top-burger .mountain {
+    cursor: pointer;
+    color: #FCFCFC;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  header .burger .heder-top-burger .burger-button {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+  }
+  header .burger__menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 894px;
+    width: 100%;
+    max-width: 450px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  header .burger__menu .list {
+    margin: 40px;
+  }
+  header .burger__menu .list li {
+    margin-bottom: 100px;
+    color: #061B28;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  .section1 img {
+    width: 100%;
+    max-width: 50vw;
+  }
+  .section3 .tabs {
+    flex-direction: column;
+  }
+  .section3 .tabs .tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .section3 .tabs .tab .tab__title {
+    height: 245px;
+    margin-right: 0;
+  }
+  .section3 .tabs .tab .tab__title img {
+    display: none;
+  }
+  .section3 .tabs .tab .tab__title p {
+    margin-left: 5px;
+  }
+  .section3 .tabs .tab .tab__title h2 {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .section3 .tabs .tab .tab__title .non_active-tab h2 {
+    color: #061B28;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .section3 .tabs .tab .tab__title .active-tab h2 {
+    color: #061B28;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  .section4 .sec4 {
+    width: 100%;
+  }
+  .section4 .sec4 .sec4__left {
+    width: 100%;
+  }
+  .section4 .sec4 .sec4__left h2 {
+    width: 100%;
+    max-width: 525px;
+    font-size: 5vw;
+  }
+  .section4 .sec4 .sec4__left p {
+    width: 100%;
+    max-width: 400px;
+    font-size: 2vw;
+  }
+  .section4 .sec4__right {
+    display: none;
+  }
+}
+@media (max-width: 1369px) {
+  .sec4__left {
+    margin-right: 30px;
+  }
+  .section4 .sec4__right {
+    margin-right: unset;
+    max-width: 590px;
+  }
+}
+@media (max-width: 770px) {
+  .section4 .sec4__left .unTitle {
+    font-size: 3vw;
+  }
+  .section4 .sec4__left .title {
+    height: 65px;
+  }
+  .container {
+    max-width: 650px;
+  }
+  .map {
+    display: none;
+  }
+}
+@media (max-width: 667px) {
+  .container {
+    max-width: 550px;
+  }
+}
+@media (max-width: 570px) {
+  .container {
+    max-width: 480px;
+  }
+  .section4 .sec4 .reg img {
+    width: 100%;
+    max-width: 450px;
+  }
+  .section4 .sec4 .reg button {
+    width: 100%;
+  }
+  header .burger__menu {
+    max-width: 300px;
+  }
+  .footer .foot {
+    flex-direction: column;
+  }
+  .footer .foot__left {
+    margin-bottom: 15px;
+  }
+  .footer .foot a {
+    margin-bottom: 15px;
+  }
+  .footer .foot {
+    padding: 8 0;
+  }
+}
+@media (max-width: 480px) {
+  .section1 h2 {
+    width: 100%;
+    max-width: 470px;
+  }
+  .section3 .tabs .tab {
+    flex-direction: column;
+  }
+  .section1 h2 {
+    padding-top: 50px;
+    width: 380px;
+    font-size: 40px;
+  }
+  .section3 .tabs .tab .tab__title {
+    height: 144px;
+    width: unset;
+  }
+  .section3 .tabs .tab .tab__title img {
+    box-shadow: #061B28;
+  }
 }/*# sourceMappingURL=style.css.map */

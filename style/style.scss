@@ -2,19 +2,25 @@
 $Oswald: 'Oswald', sans-serif;
 $Roboto: 'Roboto', sans-serif;
 
+:root{
+    --burger: false;
+}
+
 .container{
     max-width: 1170px;
     margin: 0 auto;
 }
-body{
 
-    .header{
+
+
+
+    header{
 
         background-image: url(../image/mountains.png);
         background-size: cover;
         background-repeat: no-repeat;
         align-items: center;
-    
+
         .header-top{
             padding-top: 42px;
             display: flex;    
@@ -33,7 +39,7 @@ body{
                 display: flex;
     
                 li{
-                    padding-right: 30px;
+                    padding-right: 3vw;
                     color: #FCFCFC;
                     font-family: $Roboto;
                     font-size: 16px;
@@ -49,7 +55,7 @@ body{
     
             .mountain{
                 cursor: pointer;
-                margin-right: 99px;
+                margin-right: 5vw;
                 color: #FCFCFC;
                 font-family: $Oswald;
                 font-size: 24px;
@@ -70,14 +76,14 @@ body{
             }
     
             .tel{
-                margin-right: 43px;
+                margin-right: 5vw;
                 color: #FCFCFC;
                 font-family: $Roboto;
                 font-size: 16px;
             }
     
             .search{
-                margin-right: 30px;
+                margin-right: 3vw;
             }
         }
     
@@ -150,7 +156,7 @@ body{
 
         .map{
             position: absolute;
-            top: 223px;
+            top: 320px;
             right: 0;          
         }
     }
@@ -245,7 +251,7 @@ body{
                         bottom: 75px;
                         left: 40px;
                         display: flex;
-                        color: var(--, #061B28);
+                        color: #061B28;
                         font-family: $Roboto;
                         font-size: 18px;
                         font-weight: 400;
@@ -542,8 +548,7 @@ body{
                     .active-tab{
                         background: #061B28;
                         
-                        h2{
-                            margin-left: 30px;
+                        h2{                            
                             color: #FCFCFC;
                             font-family: $Roboto;
                             font-size: 18px;
@@ -557,24 +562,40 @@ body{
                         h2{
                             color: #061B28;
                             font-family: $Roboto;
-                            font-size: 18px;
-                            font-weight: 400;
-                            line-height: 140%;
+                            // font-size: 18px;
+                            // font-weight: 400;
+                            // line-height: 140%;
                         }
 
                     }
                 }
-
             }
 
-            &__content{
+            .tabs__content{
 
                 margin-bottom: 86px;
 
                 img{
                     margin-bottom: 40px;
+                    width: 100%;
+                    max-width: 840px;
                 }
-                
+
+                .p_first{
+                    width: 100%;
+                    max-width: 800px;
+                }
+
+                .p_second{
+                    width: 100%;
+                    max-width: 800px;
+                }
+
+                .tab__date{
+                    width: 100%;
+                    max-width: 100px;
+                }
+
                 .tab{
 
                     &__date{
@@ -627,7 +648,7 @@ body{
 
         .sec4{
             
-
+            width: 100%;
             display: flex;
             justify-content: space-between;
 
@@ -636,7 +657,7 @@ body{
                 background: url(../image/RegBg.png);
                 background-size: cover;
                 background-repeat: no-repeat;
-                width: 673px;
+                width: 100%;
                 height: 725px;
                 max-width: 690px;
                 margin-right: -100px;
@@ -645,7 +666,7 @@ body{
 
             &__left{
 
-                padding-right: 60px;
+                // padding-right: 60px;
 
                 .title{
 
@@ -793,4 +814,326 @@ body{
         }
 
     }
+
+
+
+@media (max-width: 840px){
+
+    .container{
+        max-width: 750px;
+    }
+
+    header{
+
+        .ful-hd{
+            display: none;           
+        }
+
+
+        .burger{
+
+            width: 100%;           
+            padding-top: 30px;
+
+            .burger-hide{
+                display: none;
+            }
+
+            .heder-top-burger{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                .mountain{
+                    cursor: pointer;
+                    color: #FCFCFC;
+                    font-family: $Oswald;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+    
+                .burger-button{
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    background: transparent;
+                }
+            }
+            
+            &__menu{
+
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 894px;
+                width: 100%;
+                max-width: 450px;
+                background-color: rgb(255, 255, 255, .7);
+               
+
+                .list{
+
+                    margin: 40px;
+
+                    li{
+                        margin-bottom: 100px;
+                        color: #061B28;
+                        font-family: $Roboto;
+                        font-size: 16px;
+                        font-weight: 800;
+                        cursor: pointer;
+
+                    }
+                }
+
+            }
+        }
+    }
+
+    .section1{
+
+        img{
+            
+            width: 100%;
+            max-width: 50vw;
+           
+
+        }
+
+    }
+
+    .section3{
+
+        .tabs{
+
+            flex-direction: column;
+
+            
+
+                .tab{
+
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
+
+                    .tab__title{
+                       
+                        height: 245px;  
+                        margin-right: 0;
+
+                        img{
+                            display: none;
+                        }
+
+                        p{
+                            margin-left: 5px;
+                        }
+
+                        h2{
+                            margin-left: 5px;
+                            font-size: 14px;
+                        }
+
+                        .non_active-tab{
+
+                            h2{
+                                color: #061B28;
+                                font-family: $Roboto;
+                                font-size: 14px;
+                                font-weight: 400;
+                                line-height: 140%;
+                            }
+    
+                        }
+
+                        .active-tab{
+
+                            h2{
+                                color: #061B28;
+                                font-family: $Roboto;
+                                font-size: 18px;
+                                font-weight: 400;
+                                line-height: 140%;
+                            }
+    
+                        }
+                    }
+                }
+              
+            
+        }
+
+    }
+
+    .section4{
+
+        .sec4{  
+
+            width: 100%;
+            
+            .sec4__left{
+
+                width: 100%;
+                // max-width: 673px;
+
+                h2{
+
+                    width: 100%;
+                    max-width: 525px;
+                    font-size: 5vw;
+
+                }
+
+                p{
+
+                    width: 100%;
+                    max-width: 400px;
+                    font-size: 2vw;
+
+                }
+
+            }
+
+            &__right{
+                
+                display: none;
+    
+            }
+    
+        }
+    }
+
+    
+}
+
+@media (max-width: 1369px){
+
+    .sec4__left{
+        margin-right: 30px;
+    }
+
+    .section4 .sec4__right{
+        margin-right: unset;
+        max-width: 590px;
+    }
+
+}
+
+@media (max-width: 770px){
+
+    .section4 .sec4__left .unTitle{
+        font-size: 3vw;
+    }
+
+    .section4 .sec4__left .title{
+        height: 65px;
+    }
+
+    .container{
+        max-width: 650px;
+    }
+
+    .map{
+        display: none;
+    }
+
+}
+
+@media (max-width: 667px){
+    
+    .container{
+        max-width: 550px;
+    }
+
+}
+
+@media (max-width: 570px){
+
+    .container{
+        max-width: 480px;
+    }
+
+    .section4{
+
+        .sec4{
+
+            .reg{
+                img{
+                    width: 100%;
+                    max-width: 450px;
+                }
+
+                button{
+                    width: 100%;
+                }
+
+               
+            }
+
+        }
+
+    }
+
+    header .burger__menu{
+        max-width: 300px;
+    }
+
+
+    .footer .foot{
+        flex-direction: column;
+    }
+
+    .footer .foot__left{
+        margin-bottom: 15px;
+    }
+
+    .footer .foot a{
+        margin-bottom: 15px;
+    }
+
+    .footer .foot{
+        padding: 8 0;
+    }
+}
+
+@media (max-width: 480px){
+
+
+
+    .section1 h2{
+
+        width: 100%;
+        max-width: 470px;
+
+    }
+
+    .section3 .tabs .tab{
+
+        flex-direction: column;
+
+    }
+
+    .section1 h2{
+
+        padding-top: 50px;
+        width: 380px;
+        font-size: 40px;
+
+    }
+
+    .section3 .tabs .tab .tab__title{
+
+        height: 144px;
+        width: unset;
+
+        img{
+            box-shadow: #061B28;
+        }
+       
+    }
+
+   
+
 }
